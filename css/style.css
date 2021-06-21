@@ -1,0 +1,94 @@
+html,body{
+    width: 100%;
+    height: 100%;
+}
+ul{
+    margin:0;
+    padding:0;
+    list-style: none;/*sacar los puntitos*/
+}
+body{
+    background-image: url(..//img/2255.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: table;
+    margin: 0;
+    font-family: sans-serif;
+
+}
+#contenedor{
+    display:table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.contenido{
+    width:800px;
+    min-height: 600px;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: left;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+.columna-izquierda{
+    width: 25%;
+    float:left;
+}
+.columna-izquierda > img{
+max-width: 100%;
+height: auto;
+}
+
+.columna-izquierda  ul li{
+    margin:10px 0;
+}
+.columna-izquierda  ul li div{
+    width:44px;
+    height:44px;
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+    background-image: url("../img/sprite-icon-29.jpg");
+}
+.columna-izquierda ul li:first-of-type div{
+    background-position: -21px -105px;
+}
+.columna-izquierda ul li:nth-child(2) div{
+     background-position: -691px -105px;
+}
+.columna-izquierda ul li:last-child div{
+    background-position: -351px -105px;
+}
+
+.columna-derecha{
+    width:70%;
+    float:right
+}
+.brojo{
+    border:1px dashed red;
+}
+.clearfix{
+    clear: both;
+}
+.columna-derecha h1{
+    margin: 0 0 5px 0;/*0 sup 0 derecha 5 abajo 0 izquierda*/
+}
+.columna-derecha h2{
+    margin: 0;
+}
+#proyectos ul li{
+     display:inline-block;/*uno ala izquierda de acada otra*/
+     width: 156px;
+     height: 156px;
+     margin-right: 5px;
+}
+/*inline-block deja espacio entre ada elemento*/
+
+#proyectos ul li:last-of-type{
+    margin-right: 0;
+}
+
+#proyectos h3{
+    text-align: center;
+}
